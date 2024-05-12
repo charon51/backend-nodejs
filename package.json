@@ -1,30 +1,38 @@
 {
-    "name": "cooking-home-backend",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index",
-        "dev": "nodemon index"
-    },
-    "author": "kohdc",
-    "license": "ISC",
-    "devDependencies": {
-        "nodemon": "^3.0.1"
-    },
-    "dependencies": {
-        "@aws-sdk/client-s3": "^3.556.0",
-        "bcryptjs": "^2.4.3",
-        "cookie-parser": "^1.4.6",
-        "cors": "^2.8.5",
-        "date-fns": "^2.30.0",
-        "dotenv": "^16.3.1",
-        "express": "^4.18.2",
-        "express-async-handler": "^1.2.0",
-        "express-rate-limit": "^7.1.0",
-        "jsonwebtoken": "^9.0.2",
-        "mongoose": "^7.5.4",
-        "serverless-http": "^3.2.0",
-        "uuid": "^9.0.1"
-    }
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for NutriVida",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NutriVida-Tendecias/Backend.git"
+  },
+  "author": "FrediCaballero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NutriVida-Tendecias/Backend/issues"
+  },
+  "homepage": "https://github.com/NutriVida-Tendecias/Backend#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+      "@aws-sdk/client-s3": "^3.556.0",
+      "bcryptjs": "^2.4.3",
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "date-fns": "^2.30.0",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "express-async-handler": "^1.2.0",
+      "express-rate-limit": "^7.1.0",
+      "jsonwebtoken": "^9.0.2",
+      "mongoose": "^7.5.4",
+      "serverless-http": "^3.2.0",
+      "uuid": "^9.0.1"
+  }
 }

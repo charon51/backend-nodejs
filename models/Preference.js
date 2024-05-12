@@ -6,6 +6,13 @@ const preferenceSchema = new mongoose.Schema({
         require: true,
         ref: "User"
     },
+    diets: {
+        type: [String],
+        default: ["balanced"]
+    },
+    allergies: {
+        type: [String]
+    },
     favorites: {
         type: [String],
         default: ["pasta", "sandwich"]

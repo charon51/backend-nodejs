@@ -1,3 +1,4 @@
+// Variables de entorno
 require("dotenv").config();
 
 const express = require("express");
@@ -8,8 +9,7 @@ const serverless = require("serverless-http");
 const corsOptions = require("./config/corsOptions");
 const connectDb = require("./config/connectDb");
 
-const PORT = process.env.PORT || 3500;
-
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 connectDb();
@@ -38,10 +38,7 @@ app.all("*", (req, res) => {
     }
 });
 
-if (process.env.ENVIRONMENT === "serverless") {
-    module.exports.handler = serverless(app);
-} else {
-    app.listen(PORT, () => {
-        console.log(`Server running on port ${PORT}`);
-    });
-}
+// Iniciar servidor
+app.listen(PORT, () => {
+    console.log(`Servidor Express escuchando en el puerto ${PORT}`);
+});
